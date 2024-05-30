@@ -18,10 +18,26 @@ class EditarActividadModel extends FlutterFlowModel<EditarActividadWidget> {
   FocusNode? textFieldFocusNode2;
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode3;
-  TextEditingController? textController3;
-  String? Function(BuildContext, String?)? textController3Validator;
+  // State field(s) for TextField0a5 widget.
+  FocusNode? textField0a5FocusNode;
+  TextEditingController? textField0a5TextController;
+  String? Function(BuildContext, String?)? textField0a5TextControllerValidator;
+  // State field(s) for TextFieldn6a12 widget.
+  FocusNode? textFieldn6a12FocusNode;
+  TextEditingController? textFieldn6a12TextController;
+  String? Function(BuildContext, String?)?
+      textFieldn6a12TextControllerValidator;
+  // State field(s) for TextField13a18 widget.
+  FocusNode? textField13a18FocusNode;
+  TextEditingController? textField13a18TextController;
+  String? Function(BuildContext, String?)?
+      textField13a18TextControllerValidator;
+  // State field(s) for ChoiceChips widget.
+  FormFieldController<List<String>>? choiceChipsValueController;
+  String? get choiceChipsValue =>
+      choiceChipsValueController?.value?.firstOrNull;
+  set choiceChipsValue(String? val) =>
+      choiceChipsValueController?.value = val != null ? [val] : [];
   // State field(s) for PlacePicker widget.
   var placePickerValue = const FFPlace();
   DateTime? datePicked;
@@ -37,7 +53,13 @@ class EditarActividadModel extends FlutterFlowModel<EditarActividadWidget> {
     textFieldFocusNode2?.dispose();
     textController2?.dispose();
 
-    textFieldFocusNode3?.dispose();
-    textController3?.dispose();
+    textField0a5FocusNode?.dispose();
+    textField0a5TextController?.dispose();
+
+    textFieldn6a12FocusNode?.dispose();
+    textFieldn6a12TextController?.dispose();
+
+    textField13a18FocusNode?.dispose();
+    textField13a18TextController?.dispose();
   }
 }

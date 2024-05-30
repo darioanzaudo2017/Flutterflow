@@ -11,14 +11,18 @@ class ActividadesStruct extends BaseStruct {
     String? actividad,
     int? id,
     int? cantAdultos,
-    int? cantNnya,
     String? fecha,
+    int? cantNNyA13a18,
+    int? cantNNyA6a12,
+    int? cantNnya0a5,
   })  : _observacion = observacion,
         _actividad = actividad,
         _id = id,
         _cantAdultos = cantAdultos,
-        _cantNnya = cantNnya,
-        _fecha = fecha;
+        _fecha = fecha,
+        _cantNNyA13a18 = cantNNyA13a18,
+        _cantNNyA6a12 = cantNNyA6a12,
+        _cantNnya0a5 = cantNnya0a5;
 
   // "observacion" field.
   String? _observacion;
@@ -46,18 +50,34 @@ class ActividadesStruct extends BaseStruct {
   void incrementCantAdultos(int amount) => _cantAdultos = cantAdultos + amount;
   bool hasCantAdultos() => _cantAdultos != null;
 
-  // "cant_nnya" field.
-  int? _cantNnya;
-  int get cantNnya => _cantNnya ?? 0;
-  set cantNnya(int? val) => _cantNnya = val;
-  void incrementCantNnya(int amount) => _cantNnya = cantNnya + amount;
-  bool hasCantNnya() => _cantNnya != null;
-
   // "fecha" field.
   String? _fecha;
   String get fecha => _fecha ?? '';
   set fecha(String? val) => _fecha = val;
   bool hasFecha() => _fecha != null;
+
+  // "cant_NNyA_13a18" field.
+  int? _cantNNyA13a18;
+  int get cantNNyA13a18 => _cantNNyA13a18 ?? 0;
+  set cantNNyA13a18(int? val) => _cantNNyA13a18 = val;
+  void incrementCantNNyA13a18(int amount) =>
+      _cantNNyA13a18 = cantNNyA13a18 + amount;
+  bool hasCantNNyA13a18() => _cantNNyA13a18 != null;
+
+  // "cant_NNyA_6a12" field.
+  int? _cantNNyA6a12;
+  int get cantNNyA6a12 => _cantNNyA6a12 ?? 0;
+  set cantNNyA6a12(int? val) => _cantNNyA6a12 = val;
+  void incrementCantNNyA6a12(int amount) =>
+      _cantNNyA6a12 = cantNNyA6a12 + amount;
+  bool hasCantNNyA6a12() => _cantNNyA6a12 != null;
+
+  // "cant_nnya_0a5" field.
+  int? _cantNnya0a5;
+  int get cantNnya0a5 => _cantNnya0a5 ?? 0;
+  set cantNnya0a5(int? val) => _cantNnya0a5 = val;
+  void incrementCantNnya0a5(int amount) => _cantNnya0a5 = cantNnya0a5 + amount;
+  bool hasCantNnya0a5() => _cantNnya0a5 != null;
 
   static ActividadesStruct fromMap(Map<String, dynamic> data) =>
       ActividadesStruct(
@@ -65,8 +85,10 @@ class ActividadesStruct extends BaseStruct {
         actividad: data['actividad'] as String?,
         id: castToType<int>(data['id']),
         cantAdultos: castToType<int>(data['cant_adultos']),
-        cantNnya: castToType<int>(data['cant_nnya']),
         fecha: data['fecha'] as String?,
+        cantNNyA13a18: castToType<int>(data['cant_NNyA_13a18']),
+        cantNNyA6a12: castToType<int>(data['cant_NNyA_6a12']),
+        cantNnya0a5: castToType<int>(data['cant_nnya_0a5']),
       );
 
   static ActividadesStruct? maybeFromMap(dynamic data) => data is Map
@@ -78,8 +100,10 @@ class ActividadesStruct extends BaseStruct {
         'actividad': _actividad,
         'id': _id,
         'cant_adultos': _cantAdultos,
-        'cant_nnya': _cantNnya,
         'fecha': _fecha,
+        'cant_NNyA_13a18': _cantNNyA13a18,
+        'cant_NNyA_6a12': _cantNNyA6a12,
+        'cant_nnya_0a5': _cantNnya0a5,
       }.withoutNulls;
 
   @override
@@ -100,13 +124,21 @@ class ActividadesStruct extends BaseStruct {
           _cantAdultos,
           ParamType.int,
         ),
-        'cant_nnya': serializeParam(
-          _cantNnya,
-          ParamType.int,
-        ),
         'fecha': serializeParam(
           _fecha,
           ParamType.String,
+        ),
+        'cant_NNyA_13a18': serializeParam(
+          _cantNNyA13a18,
+          ParamType.int,
+        ),
+        'cant_NNyA_6a12': serializeParam(
+          _cantNNyA6a12,
+          ParamType.int,
+        ),
+        'cant_nnya_0a5': serializeParam(
+          _cantNnya0a5,
+          ParamType.int,
         ),
       }.withoutNulls;
 
@@ -132,14 +164,24 @@ class ActividadesStruct extends BaseStruct {
           ParamType.int,
           false,
         ),
-        cantNnya: deserializeParam(
-          data['cant_nnya'],
-          ParamType.int,
-          false,
-        ),
         fecha: deserializeParam(
           data['fecha'],
           ParamType.String,
+          false,
+        ),
+        cantNNyA13a18: deserializeParam(
+          data['cant_NNyA_13a18'],
+          ParamType.int,
+          false,
+        ),
+        cantNNyA6a12: deserializeParam(
+          data['cant_NNyA_6a12'],
+          ParamType.int,
+          false,
+        ),
+        cantNnya0a5: deserializeParam(
+          data['cant_nnya_0a5'],
+          ParamType.int,
           false,
         ),
       );
@@ -154,13 +196,23 @@ class ActividadesStruct extends BaseStruct {
         actividad == other.actividad &&
         id == other.id &&
         cantAdultos == other.cantAdultos &&
-        cantNnya == other.cantNnya &&
-        fecha == other.fecha;
+        fecha == other.fecha &&
+        cantNNyA13a18 == other.cantNNyA13a18 &&
+        cantNNyA6a12 == other.cantNNyA6a12 &&
+        cantNnya0a5 == other.cantNnya0a5;
   }
 
   @override
-  int get hashCode => const ListEquality()
-      .hash([observacion, actividad, id, cantAdultos, cantNnya, fecha]);
+  int get hashCode => const ListEquality().hash([
+        observacion,
+        actividad,
+        id,
+        cantAdultos,
+        fecha,
+        cantNNyA13a18,
+        cantNNyA6a12,
+        cantNnya0a5
+      ]);
 }
 
 ActividadesStruct createActividadesStruct({
@@ -168,14 +220,18 @@ ActividadesStruct createActividadesStruct({
   String? actividad,
   int? id,
   int? cantAdultos,
-  int? cantNnya,
   String? fecha,
+  int? cantNNyA13a18,
+  int? cantNNyA6a12,
+  int? cantNnya0a5,
 }) =>
     ActividadesStruct(
       observacion: observacion,
       actividad: actividad,
       id: id,
       cantAdultos: cantAdultos,
-      cantNnya: cantNnya,
       fecha: fecha,
+      cantNNyA13a18: cantNNyA13a18,
+      cantNNyA6a12: cantNNyA6a12,
+      cantNnya0a5: cantNnya0a5,
     );

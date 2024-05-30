@@ -11,7 +11,7 @@ const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
 class BuscarCall {
   static Future<ApiCallResponse> call({
-    String? buscar = 'obser',
+    String? buscar = 'Villa Maria',
   }) async {
     final ffApiRequestBody = '''
 {
@@ -20,7 +20,7 @@ class BuscarCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Buscar',
       apiUrl:
-          'https://plsgjvaiuudddbdmqzyq.supabase.co/rest/v1/rpc/buscar_en_vista_actividades_tipo_act',
+          'https://plsgjvaiuudddbdmqzyq.supabase.co/rest/v1/rpc/buscar_por_actividad',
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/json',
