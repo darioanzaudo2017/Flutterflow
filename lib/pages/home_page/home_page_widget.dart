@@ -401,7 +401,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 child:
                                                                     Container(
                                                                   width: 100.0,
-                                                                  height: 70.0,
+                                                                  height: 69.0,
                                                                   decoration:
                                                                       BoxDecoration(
                                                                     borderRadius:
@@ -424,7 +424,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .center,
                                                                     children: [
                                                                       Text(
-                                                                        'NNyA',
+                                                                        '0 a 5',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
@@ -437,10 +437,130 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         valueOrDefault<
                                                                             String>(
                                                                           carouselResumenActividadesRow
-                                                                              .totalNnya
+                                                                              .totalNnya0a5
                                                                               ?.toString(),
                                                                           '0',
                                                                         ),
+                                                                        textAlign:
+                                                                            TextAlign.center,
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              fontFamily: 'Readex Pro',
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              fontSize: 20.0,
+                                                                              letterSpacing: 0.0,
+                                                                            ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Expanded(
+                                                                child:
+                                                                    Container(
+                                                                  width: 100.0,
+                                                                  height: 69.0,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            20.0),
+                                                                    border:
+                                                                        Border
+                                                                            .all(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                    ),
+                                                                  ),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      Text(
+                                                                        '6 a 12',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              fontFamily: 'Readex Pro',
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              letterSpacing: 0.0,
+                                                                            ),
+                                                                      ),
+                                                                      Text(
+                                                                        valueOrDefault<
+                                                                            String>(
+                                                                          carouselResumenActividadesRow
+                                                                              .totalNnya6a12
+                                                                              ?.toString(),
+                                                                          '0',
+                                                                        ),
+                                                                        textAlign:
+                                                                            TextAlign.center,
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              fontFamily: 'Readex Pro',
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              fontSize: 20.0,
+                                                                              letterSpacing: 0.0,
+                                                                            ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Expanded(
+                                                                child:
+                                                                    Container(
+                                                                  width: 100.0,
+                                                                  height: 69.0,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            20.0),
+                                                                    border:
+                                                                        Border
+                                                                            .all(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                    ),
+                                                                  ),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      Text(
+                                                                        '13 a 18',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              fontFamily: 'Readex Pro',
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              letterSpacing: 0.0,
+                                                                            ),
+                                                                      ),
+                                                                      Text(
+                                                                        valueOrDefault<
+                                                                            String>(
+                                                                          carouselResumenActividadesRow
+                                                                              .totalNnya13a18
+                                                                              ?.toString(),
+                                                                          '0',
+                                                                        ),
+                                                                        textAlign:
+                                                                            TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
@@ -498,6 +618,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               ?.toString(),
                                                                           '0',
                                                                         ),
+                                                                        textAlign:
+                                                                            TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
@@ -997,7 +1119,47 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             0.0),
                                                                         child:
                                                                             Text(
-                                                                          'NNyA: ${actiItem.cantNnya?.toString()}',
+                                                                          '0 a 5: ${actiItem.cantNnya0a5?.toString()}',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .labelMedium
+                                                                              .override(
+                                                                                fontFamily: 'Plus Jakarta Sans',
+                                                                                color: const Color(0xFF57636C),
+                                                                                fontSize: 14.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.w500,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                      Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            4.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          '6 a 12: ${actiItem.cantNNyA6a12?.toString()}',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .labelMedium
+                                                                              .override(
+                                                                                fontFamily: 'Plus Jakarta Sans',
+                                                                                color: const Color(0xFF57636C),
+                                                                                fontSize: 14.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.w500,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                      Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            4.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          '13 a 18: ${actiItem.cantNNyA13a18?.toString()}',
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .labelMedium
                                                                               .override(
@@ -1322,26 +1484,62 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           .w600,
                                                                 ),
                                                           ),
-                                                          Text(
-                                                            valueOrDefault<
-                                                                String>(
-                                                              vistaactividadesItem
-                                                                  .cantNnya
-                                                                  ?.toString(),
-                                                              '0',
-                                                            ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              children: [
+                                                                Text(
+                                                                  '0 a 5: ${vistaactividadesItem.cantNnya0a5?.toString()}',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Readex Pro',
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                      ),
                                                                 ),
+                                                                Text(
+                                                                  '6 a 12: ${vistaactividadesItem.cantNNyA6a12?.toString()}',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Readex Pro',
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                      ),
+                                                                ),
+                                                                Text(
+                                                                  '13 a 18: ${vistaactividadesItem.cantNNyA13a18?.toString()}',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Readex Pro',
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                      ),
+                                                                ),
+                                                              ],
+                                                            ),
                                                           ),
                                                           Align(
                                                             alignment:
@@ -1420,7 +1618,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       showFirstLastButtons:
                                                           true,
                                                       headingRowHeight: 56.0,
-                                                      dataRowHeight: 48.0,
+                                                      dataRowHeight: 70.0,
                                                       columnSpacing: 20.0,
                                                       headingRowColor:
                                                           FlutterFlowTheme.of(

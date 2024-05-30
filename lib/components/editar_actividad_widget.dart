@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_place_picker.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -40,7 +41,11 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
 
     _model.textFieldFocusNode2 ??= FocusNode();
 
-    _model.textFieldFocusNode3 ??= FocusNode();
+    _model.textField0a5FocusNode ??= FocusNode();
+
+    _model.textFieldn6a12FocusNode ??= FocusNode();
+
+    _model.textField13a18FocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -86,7 +91,7 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
                   : null;
           return Container(
             width: 400.0,
-            height: 545.0,
+            height: 729.0,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
               borderRadius: BorderRadius.circular(20.0),
@@ -331,16 +336,16 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                       child: TextFormField(
-                        controller: _model.textController3 ??=
+                        controller: _model.textField0a5TextController ??=
                             TextEditingController(
-                          text: containerVistaActividadesTipoActRow?.cantNnya
+                          text: containerVistaActividadesTipoActRow?.cantNnya0a5
                               ?.toString(),
                         ),
-                        focusNode: _model.textFieldFocusNode3,
+                        focusNode: _model.textField0a5FocusNode,
                         autofocus: true,
                         obscureText: false,
                         decoration: InputDecoration(
-                          labelText: 'Cantidad NNyA',
+                          labelText: 'Cantidad NNyA 0 a 5',
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
                                     fontFamily: 'Readex Pro',
@@ -384,9 +389,179 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
                               fontFamily: 'Readex Pro',
                               letterSpacing: 0.0,
                             ),
-                        validator: _model.textController3Validator
+                        validator: _model.textField0a5TextControllerValidator
                             .asValidator(context),
                       ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                      child: TextFormField(
+                        controller: _model.textFieldn6a12TextController ??=
+                            TextEditingController(
+                          text: containerVistaActividadesTipoActRow
+                              ?.cantNNyA6a12
+                              ?.toString(),
+                        ),
+                        focusNode: _model.textFieldn6a12FocusNode,
+                        autofocus: true,
+                        obscureText: false,
+                        decoration: InputDecoration(
+                          labelText: 'Cantidad NNyA 6 a 12',
+                          labelStyle:
+                              FlutterFlowTheme.of(context).labelMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    letterSpacing: 0.0,
+                                  ),
+                          hintStyle:
+                              FlutterFlowTheme.of(context).labelMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    letterSpacing: 0.0,
+                                  ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).primary,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Readex Pro',
+                              letterSpacing: 0.0,
+                            ),
+                        validator: _model.textFieldn6a12TextControllerValidator
+                            .asValidator(context),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                      child: TextFormField(
+                        controller: _model.textField13a18TextController ??=
+                            TextEditingController(
+                          text: containerVistaActividadesTipoActRow
+                              ?.cantNNyA13a18
+                              ?.toString(),
+                        ),
+                        focusNode: _model.textField13a18FocusNode,
+                        autofocus: true,
+                        obscureText: false,
+                        decoration: InputDecoration(
+                          labelText: 'Cantidad NNyA 13 a 18',
+                          labelStyle:
+                              FlutterFlowTheme.of(context).labelMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    letterSpacing: 0.0,
+                                  ),
+                          hintStyle:
+                              FlutterFlowTheme.of(context).labelMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    letterSpacing: 0.0,
+                                  ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).primary,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Readex Pro',
+                              letterSpacing: 0.0,
+                            ),
+                        validator: _model.textField13a18TextControllerValidator
+                            .asValidator(context),
+                      ),
+                    ),
+                    FlutterFlowChoiceChips(
+                      options: const [
+                        ChipData('Virtual', Icons.vignette),
+                        ChipData('Presencial', Icons.people)
+                      ],
+                      onChanged: (val) => setState(
+                          () => _model.choiceChipsValue = val?.firstOrNull),
+                      selectedChipStyle: ChipStyle(
+                        backgroundColor: FlutterFlowTheme.of(context).secondary,
+                        textStyle: FlutterFlowTheme.of(context)
+                            .bodyMedium
+                            .override(
+                              fontFamily: 'Readex Pro',
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              letterSpacing: 0.0,
+                            ),
+                        iconColor: FlutterFlowTheme.of(context).primaryText,
+                        iconSize: 18.0,
+                        elevation: 4.0,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                      unselectedChipStyle: ChipStyle(
+                        backgroundColor: FlutterFlowTheme.of(context).alternate,
+                        textStyle: FlutterFlowTheme.of(context)
+                            .bodyMedium
+                            .override(
+                              fontFamily: 'Readex Pro',
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              letterSpacing: 0.0,
+                            ),
+                        iconColor: FlutterFlowTheme.of(context).secondaryText,
+                        iconSize: 18.0,
+                        elevation: 0.0,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                      chipSpacing: 12.0,
+                      rowSpacing: 12.0,
+                      multiselect: false,
+                      initialized: _model.choiceChipsValue != null,
+                      alignment: WrapAlignment.start,
+                      controller: _model.choiceChipsValueController ??=
+                          FormFieldController<List<String>>(
+                        [containerVistaActividadesTipoActRow!.modalidad!],
+                      ),
+                      wrapped: true,
                     ),
                     FlutterFlowPlacePicker(
                       iOSGoogleMapsApiKey:
@@ -431,7 +606,7 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
                         final datePickedDate = await showDatePicker(
                           context: context,
                           initialDate: getCurrentTimestamp,
-                          firstDate: getCurrentTimestamp,
+                          firstDate: DateTime(1900),
                           lastDate: DateTime(2050),
                           builder: (context, child) {
                             return wrapInMaterialDatePickerTheme(
@@ -516,8 +691,8 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
                             'observacion': _model.textController1.text,
                             'cant_adultos':
                                 int.tryParse(_model.textController2.text),
-                            'cant_nnya':
-                                int.tryParse(_model.textController3.text),
+                            'cant_nnya_0a5': int.tryParse(
+                                _model.textField0a5TextController.text),
                             'Lat': _model.placePickerValue == null
                                 ? containerVistaActividadesTipoActRow?.lat
                                 : functions.lat(_model.placePickerValue.latLng),
@@ -525,6 +700,11 @@ class _EditarActividadWidgetState extends State<EditarActividadWidget> {
                                 ? containerVistaActividadesTipoActRow?.long
                                 : functions
                                     .long(_model.placePickerValue.latLng),
+                            'cant_NNyA_6a12': int.tryParse(
+                                _model.textFieldn6a12TextController.text),
+                            'cant_NNyA_13a18': int.tryParse(
+                                _model.textField13a18TextController.text),
+                            'Modalidad': _model.choiceChipsValue,
                           },
                           matchingRows: (rows) => rows.eq(
                             'id',

@@ -23,4 +23,10 @@ class TipoActividadRow extends SupabaseDataRow {
 
   String get actividad => getField<String>('actividad')!;
   set actividad(String value) => setField<String>('actividad', value);
+
+  String? get area => getField<String>('area');
+  set area(String? value) => setField<String>('area', value);
+
+  String? get programa => getField<String>('Programa');
+  set programa(String? value) => setField<String>('Programa', value);
 }
